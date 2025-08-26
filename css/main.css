@@ -6,6 +6,20 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Black.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Regular.woff2) format("woff2");
   font-weight: 400;
@@ -65,6 +79,7 @@
 /* Наследование шрифтов и размеров по умолчанию */
 html, body {
   height: 100%;
+  background-color: #E5E5E5;
   font-family: sans-serif; /* или твой шрифт по умолчанию */
   -webkit-text-size-adjust: 100%; /* избегаем масштабирования на iOS */
 }
@@ -123,4 +138,122 @@ button {
 /* Скрываем скрытые элементы */
 [hidden] {
   display: none !important;
+}
+
+/* Настройки проекта */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+}
+.block {
+  max-width: 1241px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 51px;
+  color: #2f2e2e;
+}
+/* header */
+.header__menu-menu_flex {
+  padding-top: 49px;
+  display: flex;
+  justify-content: left;
+}
+.header__menu-menu_flex-menu {
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 108px;
+  margin-left: 387px;
+  margin-right: 60px;
+}
+.header__menu-menu_flex h4 {
+  font-family: var(--third-family);
+  font-weight: 600;
+  font-size: 42px;
+  color: #2f2e2e;
+}
+.header__menu-menu_flex-menu a {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #2f2e2e;
+}
+.header__menu-menu_flex-menu a:hover {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #2f2e2e;
+}
+.header__title img {
+  position: relative;
+  padding-top: 87px;
+  margin-left: 191px;
+}
+.header__title-h1-inner {
+  position: absolute;
+  width: 691px;
+  min-height: 550px;
+  margin-top: -643px;
+  margin-left: -97px;
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+.header__title h1,
+.header__title p {
+  max-width: 436px;
+  margin-left: 97px;
+}
+.header__title h1 {
+  padding-top: 135px;
+}
+.header__title p {
+  padding-top: 13px;
+  font-family: var(--second-family);
+  font-weight: 200;
+  font-size: 32px;
+  color: #2f2e2e;
+}
+/* services */
+.services .container {
+  background: rgba(37, 77, 77, 0.2);
+}
+.services h2 {
+  padding-top: 17px;
+  text-align: center;
+}
+.services__grid {
+  padding-top: 44px;
+  padding-left: 5px;
+  padding-bottom: 63px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 156px;
+}
+.services__grid-item {
+}
+.services__grid-item img {
+  margin: 0 auto;
+}
+.services__grid-item h3 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 27px;
+  text-align: center;
+  color: #2f2e2e;
+}
+.services__grid-item p {
+  padding-top: 8px;
+  margin: 0 auto;
+  max-width: 158px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #2f2e2e;
 }

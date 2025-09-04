@@ -277,6 +277,9 @@ h2 {
   color: #2f2e2e;
 }
 /* About_us */
+.about_us {
+  scroll-margin-top: 90px;
+}
 .about_us__flex {
   display: flex;
   padding-top: 77px;
@@ -314,6 +317,9 @@ h2 {
   color: #2f2e2e;
 }
 /* our_projects */
+.our_projects {
+  scroll-margin-top: 50px;
+}
 .our_projects h2 {
   padding-top: 94px;
 }
